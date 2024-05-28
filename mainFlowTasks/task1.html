@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prangya's Portfolio</title>
+    <link rel="stylesheet" href="task1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <img src="babysah.jpg" alt="Prangya"> 
+        <nav class="port">
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <h2 class="logo">Portfo<span>lio.</span></h2>
+
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+             <div class="btn">
+                <a href="#" class="login">Log In</a>
+                <a href="#" class="register">Register</a>
+            </div> 
+          
+        </nav>
+        <div class="content">
+            <h3 id="hello">Hello,</h3>
+            <h3 id="name">I am <span>Prangya.</span></h3>
+            <p class="m-link">Web Developer at 
+                <a href="https://www.mainflow.in/">Main Flow Services and Technologies.
+                </a>
+                <br>
+                I am Prangya Paramita Sahoo,an expert in Front end Development.<br>Passionate Programmer.
+                <br>
+                STUDENT||CODER||DEVELOPER
+            </p>
+        </div>
+        <div class="link">
+            <a href="#" class="hire">Hire Me</a>
+            <a href="sahooprangyapramita_Resume (1).pdf" download class="resume">Download Resume</a>
+        </div>
+    </div>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.left = "0";
+        }
+        function closemenu(){
+            sidemenu.style.left = "-800px";
+        }
+    </script>
+</body>
+</html>
